@@ -11,5 +11,6 @@
   remote_user: root
   hosts: all
   roles:
-    - web_browsers
     - utilities
+    - web_browsers
+    - programming

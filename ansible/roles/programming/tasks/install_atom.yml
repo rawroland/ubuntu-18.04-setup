@@ -1,0 +1,14 @@
+- name: Ensure that the repository file exists
+  template:
+    src: atom.list.j2
+    dest: /etc/apt/sources.list.d/atom.list
+
+- name: Ensure the apt key exists
+  apt_key:
+    url: https://packagecloud.io/AtomEditor/atom/gpgkey
+
+- name: Ensure atom is installed
+  apt:
+    name: atom
+    state: present
+    update_cache: yes
