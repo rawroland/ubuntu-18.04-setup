@@ -8,5 +8,8 @@
   become: yes
   become_user: "{{ user }}"
 
-- name: Make zsh the default shell for given user
-  shell: "chsh -s `which zsh` {{ user }}"
+- name: Make zsh the default shell for users
+  shell: "chsh -s $(which zsh) {{ item }}"
+  with_items:
+    - "{{ user }}"
+    - "root"
