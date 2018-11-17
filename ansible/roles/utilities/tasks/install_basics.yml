@@ -12,5 +12,7 @@
     - mlocate
     - ufw
     - xclip
+    - gnome-tweak-tool
+    - gconf2
   become: yes
   become_user: root
