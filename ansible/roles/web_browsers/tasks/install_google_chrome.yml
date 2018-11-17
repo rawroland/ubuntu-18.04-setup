@@ -1,0 +1,14 @@
+- name: Ensure that the repository file exists
+  template:
+    src: google-chrome.list.j2
+    dest: /etc/apt/sources.list.d/google-chrome.list
+
+- name: Ensure the apt key exists
+  apt_key:
+    url: https://dl.google.com/linux/linux_signing_key.pub
+
+- name: Ensure google chrome is installed
+  apt:
+    name: google-chrome-stable
+    state: present
+    update_cache: yes

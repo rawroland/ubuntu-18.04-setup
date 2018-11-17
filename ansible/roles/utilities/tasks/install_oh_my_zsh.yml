@@ -1,0 +1,12 @@
+- name: Install oh my zsh
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  become: yes
+  become_user: root
+
+- name: Install zsh default config for user vagrant
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  become: yes
+  become_user: "{{ user }}"
+
+- name: Make zsh the default shell for given user
+  shell: "chsh -s `which zsh` {{ user }}"

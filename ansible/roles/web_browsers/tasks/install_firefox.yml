@@ -1,0 +1,4 @@
+- name: Ensure firefox is installed
+  apt:
+    name: firefox
+    state: present

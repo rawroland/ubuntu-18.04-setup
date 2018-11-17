@@ -1,0 +1,15 @@
+- name: Prepare environment variables
+  hosts: all
+  vars_prompt:
+    - name: "user"
+      prompt: "Who is the standard user?"
+  tasks:
+    - set_fact:
+        user: "{{ user }}"
+
+- name: Setup the machine
+  remote_user: root
+  hosts: all
+  roles:
+    - web_browsers
+    - utilities

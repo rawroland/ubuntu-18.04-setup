@@ -1,0 +1,4 @@
+# Common tasks
+
+- include: install_basics.yml
+- include: install_oh_my_zsh.yml
