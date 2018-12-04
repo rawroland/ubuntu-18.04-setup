@@ -25,7 +25,6 @@
     - atom-material-ui
     - atom-typeScript
     - autocomplete-ansible
-    - autocomplete-webpack
     - autocomplete-xml
     - behat-atom
     - colorful-json

@@ -1,2 +1,3 @@
 - include_tasks: install_atom.yml
 - include_tasks: install_postman.yml
+- include_tasks: install_phpstorm.yml
