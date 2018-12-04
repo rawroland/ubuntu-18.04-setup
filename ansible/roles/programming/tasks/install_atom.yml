@@ -12,3 +12,27 @@
     name: atom
     state: present
     update_cache: yes
+
+- name: Ensure atom packages are installed
+  shell: "apm install {{ item }}"
+  with_items:
+    - activate-power-mode
+    - aligner
+    - aligner-javascript
+    - atom-beautify
+    - atom-ctags
+    - atom-jinja2
+    - atom-material-ui
+    - atom-typeScript
+    - autocomplete-ansible
+    - autocomplete-webpack
+    - autocomplete-xml
+    - behat-atom
+    - colorful-json
+    - editorconfig
+    - intentions
+    - language-ansible
+    - language-ini
+    - linter
+    - linter-ansible-linting
+    - linter-js-yaml
