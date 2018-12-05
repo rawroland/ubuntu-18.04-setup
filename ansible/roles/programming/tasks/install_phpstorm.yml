@@ -1,2 +1,2 @@
 - name: Ensure Postman is installed
-  shell: "snap install postman"
+  shell: "snap install phpstorm --classic"
