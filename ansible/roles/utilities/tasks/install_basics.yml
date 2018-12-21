@@ -14,5 +14,9 @@
     - xclip
     - gnome-tweak-tool
     - gconf2
+    - build-essential
+    - byobu
+    - virtualbox
+    - software-properties-common
   become: yes
   become_user: root
