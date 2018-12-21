@@ -6,7 +6,6 @@ A tool for automating the orchestration of Ubuntu 18.04 desktop using ansible.
 ## Communication
 *
 ## Development
-* ant
 * apache2
 * atom
 * docker
@@ -17,8 +16,6 @@ A tool for automating the orchestration of Ubuntu 18.04 desktop using ansible.
 ## Internet
 * firefox
 * google-chrome
-* vivaldi
-
 
 ## Utility
 * autoconf

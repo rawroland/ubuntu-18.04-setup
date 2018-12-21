@@ -1,0 +1,10 @@
+- name: Ensure the gimp repository exists
+  apt_repository:
+    repo: "ppa:otto-kesselgulasch/gimp"
+    state: present
+
+- name: Ensure gimp is installed
+  apt:
+    name: gimp
+    state: present
+    update_cache: yes

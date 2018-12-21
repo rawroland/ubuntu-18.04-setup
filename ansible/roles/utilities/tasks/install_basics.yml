@@ -4,6 +4,8 @@
     - ntp
     - vim
     - git
+    - gource
+    - filezilla
     - zsh
     - htop
     - curl
@@ -18,5 +20,8 @@
     - byobu
     - virtualbox
     - software-properties-common
+    - autoconf
+    - automake
+    - keepassx
   become: yes
   become_user: root
