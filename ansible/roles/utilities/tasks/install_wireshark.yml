@@ -1,0 +1,10 @@
+- name: Ensure the wireshark repository exists
+  apt_repository:
+    repo: "ppa:wireshark-dev/stable"
+    state: present
+
+- name: Ensure wireshark is installed
+  apt:
+    name: wireshark
+    state: present
+    update_cache: yes
