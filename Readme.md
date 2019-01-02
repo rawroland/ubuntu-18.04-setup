@@ -2,29 +2,13 @@
 A tool for automating the orchestration of Ubuntu 18.04 desktop using ansible.
 
 # What will be installed?
-
-## Communication
-*
-## Development
-* apache2
-* atom
+* nvm
+* nodejs 10.13.0, 10.15.0
 * docker
-* filezilla
-* git
-* gource
-
-## Internet
-* firefox
-* google-chrome
-
-## Utility
-* autoconf
-* automake
-* build-essential
-* curl
-* byobu
-* python-dev
-* wget
-
-## Misc
-* gimp
+* docker-compose
+* Apache
+* Mysql
+* PHP
+* vagrant
+* virtualbox
+* platformsh
