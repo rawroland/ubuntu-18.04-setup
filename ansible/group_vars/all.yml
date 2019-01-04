@@ -5,7 +5,7 @@
 timezone: "Europe/Berlin"
 php_version: 7.2
 mysql_version: 5.7
-
+nginx_version: 1.14*
 web_user: www-data
 web_group: www-data
 db_root_user: root

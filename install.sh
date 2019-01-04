@@ -12,6 +12,6 @@ fi;
 
 mkdir /etc/ansible
 touch /etc/ansible/hosts
-echo "\n[local]\n127.0.0.1 ansible_connection=local" | tee /etc/ansible/hosts
+echo "\n[local]\n127.0.0.1 ansible_connection=local env=dev" | tee /etc/ansible/hosts
 
 ansible-playbook "$parent_path/ansible/playbook.yml"
