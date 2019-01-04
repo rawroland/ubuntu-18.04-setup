@@ -6,6 +6,7 @@
   tasks:
     - set_fact:
         user: "{{ user }}"
+        deployer: "{{ user }}"
 
 - name: Setup the machine
   remote_user: root
@@ -14,3 +15,6 @@
     - utilities
     - web_browsers
     - programming
+    - nginx
+    - php
+    - mysql

@@ -1,0 +1,12 @@
+[submodule "ansible-nginx-role"]
+	path = ansible/roles/nginx
+	url = git@github.com:rawroland/ansible_nginx_role.git
+	branch = master
+[submodule "ansible-php-role"]
+	path = ansible/roles/php
+	url = git@github.com:rawroland/ansible_php_role.git
+	branch = master
+[submodule "ansible-mysql-role"]
+	path = ansible/roles/mysql
+	url = git@github.com:rawroland/ansible_mysql_role.git
+	branch = master

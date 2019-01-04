@@ -1,0 +1,12 @@
+---
+# Variables listed here are applicable to all host groups
+# These don't have to be explicitly imported by vars_files: they are autopopulated.
+
+timezone: "Europe/Berlin"
+php_version: 7.2
+mysql_version: 5.7
+
+web_user: www-data
+web_group: www-data
+db_root_user: root
+db_root_password: toor
