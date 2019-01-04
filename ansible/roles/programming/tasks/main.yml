@@ -3,3 +3,4 @@
 - include_tasks: install_phpstorm.yml
 - include_tasks: install_rambox.yml
 - include_tasks: install_nodejs.yml
+- include_tasks: install_docker.yml

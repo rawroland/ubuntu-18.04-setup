@@ -1,0 +1,26 @@
+- name: Ensure that the repository file exists
+  template:
+    src: docker.list.j2
+    dest: /etc/apt/sources.list.d/docker.list
+
+- name: Ensure the apt key exists
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+
+- name: Ensure docker is installed
+  apt:
+    name: docker-ce
+    state: present
+    update_cache: yes
+
+- name: Ensure the user is in the docker group
+  user:
+    name: "{{ user }}"
+    groups: docker
+    append: yes
+
+- name: Ensure docker compose is installed
+  get_url:
+    url: "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)"
+    dest: "/usr/local/bin/docker-compose"
+    mode: "a+x"
