@@ -2,3 +2,4 @@
 - include_tasks: install_postman.yml
 - include_tasks: install_phpstorm.yml
 - include_tasks: install_rambox.yml
+- include_tasks: install_nodejs.yml

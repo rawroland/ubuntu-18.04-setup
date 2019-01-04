@@ -1,0 +1,19 @@
+- name: Ensure nvm is installed
+  shell: >
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh
+  args:
+    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
+
+- name: Ensure nodejs is installed
+  shell: "nvm install {{ item }}"
+  with_items:
+    - "6.11.5"
+    - "8.15.0"
+    - "10.13.0"
+    - "10.15.0"
+
+- name: Ensure nvm aliases are set
+  shell: "nvm alias {{ item.alias }} {{ item.version }}"
+  with_items:
+    - { alias: 'default', version: '10.13.0' }
+    - { alias: 'latest', version: '10.15.0' }
