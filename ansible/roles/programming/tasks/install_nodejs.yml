@@ -5,15 +5,26 @@
     creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
 
 - name: Ensure nodejs is installed
-  shell: "nvm install {{ item }}"
+  shell: "source {{ ansible_env.HOME }}/.zshrc && nvm install {{ item }}"
   with_items:
     - "6.11.5"
     - "8.15.0"
     - "10.13.0"
     - "10.15.0"
+  args:
+     executable: /usr/bin/zsh
 
 - name: Ensure nvm aliases are set
-  shell: "nvm alias {{ item.alias }} {{ item.version }}"
+  shell: "source {{ ansible_env.HOME }}/.zshrc && nvm alias {{ item.alias }} {{ item.version }}"
   with_items:
     - { alias: 'default', version: '10.13.0' }
     - { alias: 'latest', version: '10.15.0' }
+  args:
+     executable: /usr/bin/zsh
+
+- name: Ensure correct permissions
+  file:
+    path: "{{ ansible_env.HOME }}/.config"
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    recurse: yes
