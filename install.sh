@@ -4,7 +4,7 @@ if ! `which ansible >/dev/null 2>&1`; then
   echo "#### Install ansible ####"
   apt-get udpate
   apt-get install -y software-properties-common python-minimal python python-pip sshpass
-  pip install pip --upgrade
+  pip install pip --upgrade --user
   pip install setuptools --upgrade
   pip install pyopenssl ndg-httpsclient pyasn1
   pip install ansible
