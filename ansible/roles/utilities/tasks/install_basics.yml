@@ -23,5 +23,6 @@
     - autoconf
     - automake
     - keepassx
+    - thunderbird
   become: yes
   become_user: root
