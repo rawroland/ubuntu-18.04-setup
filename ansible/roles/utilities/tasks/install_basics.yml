@@ -22,9 +22,4 @@
     - software-properties-common
     - autoconf
     - automake
-    - keepassx
-    - thunderbird
-    - xul-ext-lightning
     - chrome-gnome-shell
-  become: yes
-  become_user: root

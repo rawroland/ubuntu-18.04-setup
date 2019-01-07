@@ -1,6 +1,7 @@
 # Common tasks
 
 - include: install_basics.yml
+- include: install_organizational.yml
 - include: install_oh_my_zsh.yml
 - include: install_gimp.yml
 - include: install_wireshark.yml

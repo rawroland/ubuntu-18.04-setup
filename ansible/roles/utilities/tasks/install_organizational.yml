@@ -1,0 +1,6 @@
+- name: Install basic packages
+  apt: name={{ item }} state=present
+  with_items:
+    - keepassx
+    - thunderbird
+    - xul-ext-lightning
