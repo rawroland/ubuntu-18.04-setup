@@ -24,5 +24,6 @@
     - automake
     - keepassx
     - thunderbird
+    - xul-ext-lightning
   become: yes
   become_user: root
