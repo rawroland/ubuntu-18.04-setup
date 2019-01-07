@@ -35,3 +35,4 @@
     - linter
     - linter-ansible-linting
     - linter-js-yaml
+    - atom-terminal
