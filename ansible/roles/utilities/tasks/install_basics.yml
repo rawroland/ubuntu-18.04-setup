@@ -19,6 +19,7 @@
     - build-essential
     - byobu
     - virtualbox
+    - virtualbox-ext-pack
     - software-properties-common
     - autoconf
     - automake
